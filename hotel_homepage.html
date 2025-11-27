@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #eae8e0;
+        }
+
+        .border {
+            padding: 15px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            background-color: #b6ac9f;
+        }
+
+        .page {
+            text-decoration: none;
+            font-size : 120%;
+            color: #4f443d;
+            margin-right: 12px;
+        }
+
+        .pagesbar {
+            display:flex;
+            margin-left:auto;
+            gap:10px;
+            align-items:center;
+        }
+        
+        .logo {
+            margin-right: 8px;
+            width: 40px;
+            height: auto;
+        }
+
+        .pagetitle{
+            font-size:120%;
+        }
+
+        .popup-panel {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #b6ac9f;
+            color: #4f443d;
+            padding: 80px;
+            z-index: 1000; 
+            text-align: center;
+        }
+        </style>
+
+    </head>
+    <body>
+        <nav class="border" role="navigation" aria-label="Main navigation">
+            <img src="Logo.png" alt="logo" class="logo">
+            <!--Page name-->
+            <div class="pagetitle">
+                Welcome
+            </div>
+            <!--Pages header-->
+            <div class="pagesbar">
+                <a href="./hotel_homepage.html" class="page">Home</a>
+                <a href="./hotel_bookingpage.html" class="page">Booking</a>
+                <a href="./hotel_contactpage.html" class="page">Contacts</a>
+            </div>
+        </nav>
+        <br>
+        
+        <div id="branchPopup" class="popup-panel" role="dialog" aria-hidden="true" aria-labelledby="branch">
+            <form id="branchID">
+                <label>Which brance are you looking to visit?</label>
+                <select>
+                    <option value="KL">Kuala Lumpur</option>
+                    <option value="Penang">Penang</option>
+                    <option value="Melacca">Melacca</option>
+                    <option value="Langkawi">Langkawi</option>
+                </select>
+
+                <br><br><button type="submit">Ok</button>
+            </form>
+            
+        <script>
+
+        </script>
+    </body>
+</html>
+
