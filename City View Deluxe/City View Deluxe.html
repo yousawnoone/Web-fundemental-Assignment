@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>City View Deluxe Room</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="City View Deluxe.css">
+	</head>
+	<body>
+		<!-- Shared navigation -->
+		<nav class="border" role="navigation" aria-label="Main navigation">
+			<img src="../Logo.png" alt="Hotel logo" class="logo">
+			<div class="pagetitle">City View Deluxe</div>
+			<div class="pagesbar">
+				<a href="../hotel_homepage.html" class="page">Home</a>
+				<a href="../hotel_bookingpage.html" class="page">Booking</a>
+				<a href="../hotel_contactpage.html" class="page">Contacts</a>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<header class="room-hero" aria-label="City View Deluxe hero">
+			<div class="hero-media" role="img" aria-label="Panoramic city view from deluxe room"></div>
+			<div class="hero-overlay"></div>
+			<div class="hero-inner">
+				<h1 class="hero-title">City View Deluxe</h1>
+				<p class="hero-tagline">Elevated comfort with sweeping skyline vistas.</p>
+				<button class="primary-cta" id="openBook" type="button">Book This Room</button>
+			</div>
+		</header>
+
+		<main class="content" id="mainContent">
+			<!-- Intro / Description -->
+			<section class="section intro" aria-labelledby="introTitle">
+				<h2 id="introTitle">Overview</h2>
+				<p class="lead">Our City View Deluxe room blends calming interior design with unobstructed panoramic views. Thoughtful lighting, plush textiles, and bespoke furnishings create a restorative environment for both work and leisure.</p>
+			</section>
+
+			<!-- Facilities / Features -->
+			<section class="section facilities" aria-labelledby="facilitiesTitle">
+				<h2 id="facilitiesTitle">Facilities & Amenities</h2>
+				<ul class="feature-grid" aria-label="Room features list">
+					<li class="feature-item">King Sized Bed with premium linens</li>
+					<li class="feature-item">Floor-to-ceiling window city panorama</li>
+					<li class="feature-item">Dedicated ergonomic work desk</li>
+					<li class="feature-item">High-speed wireless internet</li>
+					<li class="feature-item">Rain shower & soaking tub bath</li>
+					<li class="feature-item">In-room artisan coffee & tea bar</li>
+					<li class="feature-item">Smart TV + streaming access</li>
+					<li class="feature-item">In-room digital safe</li>
+				</ul>
+			</section>
+
+			<!-- Specifications Table -->
+			<section class="section specs" aria-labelledby="specsTitle">
+				<h2 id="specsTitle">Specifications</h2>
+				<table class="spec-table" aria-describedby="specsTitle">
+					<tbody>
+						<tr>
+							<th scope="row">Size</th>
+							<td>42 m² / 452 ft²</td>
+						</tr>
+						<tr>
+							<th scope="row">View</th>
+							<td>East & South city skyline</td>
+						</tr>
+						<tr>
+							<th scope="row">Max Occupancy</th>
+							<td>2 Adults + 1 Child (rollaway)</td>
+						</tr>
+						<tr>
+							<th scope="row">Bed</th>
+							<td>King (210 cm)</td>
+						</tr>
+						<tr>
+							<th scope="row">Bathroom</th>
+							<td>Marble bath, rain shower, soaking tub</td>
+						</tr>
+						<tr>
+							<th scope="row">Connectivity</th>
+							<td>1 Gbps Wi‑Fi, multi-standard outlets, USB-C</td>
+						</tr>
+						<tr>
+							<th scope="row">Included</th>
+							<td>Daily breakfast, pool & gym access</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+
+			<!-- Secondary CTA -->
+			<section class="section booking-inline" aria-label="Inline booking">
+				<div class="inline-box">
+					<h2>Ready to Stay?</h2>
+					<p>Secure your City View Deluxe experience now. Flexible check-in/out and complimentary wellness access included.</p>
+					<button class="primary-cta" id="openBookInline" type="button">Start Booking</button>
+				</div>
+			</section>
+		</main>
+
+		<!-- Booking Modal -->
+		<div class="booking-modal" id="bookingModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="bookTitle">
+			<div class="modal-panel">
+				<button class="close-btn" id="closeModal" aria-label="Close booking form">×</button>
+				<h2 id="bookTitle">Book City View Deluxe</h2>
+				<form id="roomBookingForm">
+					<div class="form-row">
+						<label for="firstName">First Name</label>
+						<input id="firstName" name="firstName" required>
+					</div>
+					<div class="form-row">
+						<label for="lastName">Last Name</label>
+						<input id="lastName" name="lastName" required>
+					</div>
+					<div class="form-row">
+						<label for="email">Email</label>
+						<input id="email" name="email" type="email" required>
+					</div>
+					<div class="form-row">
+						<label for="checkIn">Check-In</label>
+						<input id="checkIn" name="checkIn" type="date" required>
+					</div>
+						<div class="form-row">
+						<label for="checkOut">Check-Out</label>
+						<input id="checkOut" name="checkOut" type="date" required>
+					</div>
+					<div class="form-row">
+						<label for="guests">Guests</label>
+						<input id="guests" name="guests" type="number" min="1" max="3" value="2" required>
+					</div>
+					<div class="form-row">
+						<label>Room</label>
+						<input type="text" readonly value="City View Deluxe" class="readonly-room">
+					</div>
+					<div class="actions">
+						<button type="submit" class="primary-cta">Confirm Booking</button>
+						<button type="button" class="secondary-cta" id="cancelBooking">Cancel</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="site-footer" aria-label="Footer">
+			<div class="footer-inner">
+				<div class="footer-logo" aria-label="Brand">
+					<img src="../Logo.png" alt="Six Seven Hotel" />
+				</div>
+				<div class="footer-columns" role="navigation" aria-label="Footer links">
+					<div class="col">
+						<h4>About</h4>
+						<ul>
+							<li><a href="#" aria-label="About us">ABOUT US</a></li>
+							<li><a href="#" aria-label="For good initiatives">FOR GOOD</a></li>
+							<li><a href="#" aria-label="Health and safety">HEALTH &amp; SAFETY</a></li>
+							<li><a href="#" aria-label="Careers">CAREERS</a></li>
+							<li><a href="#" aria-label="Contact us">CONTACT US</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h4>Reservations</h4>
+						<ul>
+							<li><a href="#">REQUEST AN INVOICE</a></li>
+							<li><a href="#">FIND A RESERVATION</a></li>
+							<li><a href="#">EMAIL PREFERENCES</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h4>News</h4>
+						<ul>
+							<li><a href="#">PRESS ROOM</a></li>
+							<li><a href="#">NEW OPENINGS</a></li>
+							<li><a href="#">MAGAZINE</a></li>
+							<li><a href="#">NEWSLETTER</a></li>
+						</ul>
+					</div>
+					<div class="col">
+						<h4>More</h4>
+						<ul>
+							<li><a href="#">PRIVATE JET</a></li>
+							<li><a href="#">YACHTS</a></li>
+							<li><a href="#">RESIDENCES</a></li>
+							<li><a href="#">VILLA RENTALS</a></li>
+							<li><a href="#">GIFT CARDS</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-social" aria-label="Social media">
+					<a class="social" href="#" aria-label="Facebook"><img src="../homepage_resources/facebook-svgrepo-com.svg" alt="Facebook" /></a>
+					<a class="social" href="#" aria-label="Instagram"><img src="../homepage_resources/instagram-svgrepo-com.svg" alt="Instagram" /></a>
+					<a class="social" href="#" aria-label="YouTube"><img src="../homepage_resources/youtube-svgrepo-com.svg" alt="YouTube" /></a>
+				</div>
+				<hr class="footer-divider" />
+				<div class="footer-bottom">
+					<div class="legal-links">Legal Notice · Privacy Notice · Cookie Preferences · Accessibility · Modern Slavery Statement</div>
+					<div class="bottom-right">
+						<div class="language" role="listbox" aria-label="Language selector">ENGLISH ▾</div>
+						<div class="copyright">©Six Seven Hotels Limited 1997-2025. All Rights Reserved.</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			(function(){
+				const openBtns = [document.getElementById('openBook'), document.getElementById('openBookInline')];
+				const modal = document.getElementById('bookingModal');
+				const closeBtn = document.getElementById('closeModal');
+				const cancelBtn = document.getElementById('cancelBooking');
+				const form = document.getElementById('roomBookingForm');
+				let lastFocused;
+
+				function openModal(){
+					lastFocused = document.activeElement;
+					modal.classList.add('active');
+					modal.setAttribute('aria-hidden', 'false');
+					document.getElementById('firstName').focus();
+					document.body.classList.add('no-scroll');
+				}
+				function closeModal(){
+					modal.classList.remove('active');
+					modal.setAttribute('aria-hidden', 'true');
+					document.body.classList.remove('no-scroll');
+					if(lastFocused) lastFocused.focus();
+				}
+				openBtns.forEach(btn => btn && btn.addEventListener('click', openModal));
+				closeBtn.addEventListener('click', closeModal);
+				cancelBtn.addEventListener('click', closeModal);
+				modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
+				document.addEventListener('keydown', e => { if(e.key === 'Escape' && modal.classList.contains('active')) closeModal(); });
+
+				form.addEventListener('submit', e => {
+					e.preventDefault();
+					// basic validation already handled by required attributes
+					const params = new URLSearchParams({
+						room: 'City View Deluxe',
+						checkIn: form.checkIn.value,
+						checkOut: form.checkOut.value,
+						guests: form.guests.value
+					}).toString();
+					// Redirect to generic booking page (could be purchase page)
+					window.location.href = '../hotel_purchasepage.html?' + params;
+				});
+			})();
+		</script>
+	</body>
+</html>

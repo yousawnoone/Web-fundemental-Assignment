@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Garden Pool Villa</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="Garden Pool Villa.css" />
+	<link rel="preload" href="../homepage_resources/best-luxury-hotel-private-luxury-villas-with-ocean-view-greece-porto-zante-villas-and-spa-01-2.webp" as="image" />
+</head>
+<body>
+	<!-- Nav -->
+	<header class="border" role="banner">
+		<img src="../Logo.png" alt="Hotel Logo" class="logo" />
+		<div class="pagetitle">Garden Pool Villa</div>
+		<nav class="pagesbar" aria-label="Primary">
+			<a href="../hotel_homepage.html" class="page">Home</a>
+			<a href="../hotel_bookingpage.html" class="page">Booking</a>
+			<a href="../hotel_contactpage.html" class="page">Contact</a>
+		</nav>
+	</header>
+
+	<!-- Hero -->
+	<section class="room-hero" aria-label="Garden Pool Villa Hero">
+		<div class="hero-media" aria-hidden="true"></div>
+		<div class="hero-overlay" aria-hidden="true"></div>
+		<div class="hero-inner">
+			<h1 class="hero-title">GARDEN POOL VILLA</h1>
+			<p class="hero-tagline">Private sanctuary embraced by lush tropical greenery and a serene heated pool, crafted for secluded relaxation and refined indulgence.</p>
+			<button class="primary-cta" data-open-booking aria-haspopup="dialog">BOOK YOUR STAY</button>
+		</div>
+	</section>
+
+	<main class="content" id="main-content">
+		<!-- Overview -->
+		<section class="section" aria-labelledby="overview-heading">
+			<h2 id="overview-heading">OVERVIEW</h2>
+			<p class="lead">The Garden Pool Villa harmoniously blends indoor elegance and outdoor tranquility. Framed by manicured foliage and subtle ambient lighting, its private heated pool invites unhurried mornings and twilight swims. Inside, bespoke furnishings, natural textures, and muted tones create a calming retreat—ideal for couples seeking privacy or families desiring fluid, open space. Seamlessly integrated comforts and intuitive layout deliver effortless relaxation throughout your stay.</p>
+		</section>
+
+		<!-- Facilities -->
+		<section class="section" aria-labelledby="facilities-heading">
+			<h2 id="facilities-heading">FACILITIES</h2>
+			<ul class="feature-grid" aria-label="Villa Facilities">
+				<li class="feature-item">Heated private outdoor pool framed by botanical garden edge</li>
+				<li class="feature-item">Expansive furnished terrace with dining + lounging zones</li>
+				<li class="feature-item">Curated minibar featuring organic & premium selections</li>
+				<li class="feature-item">Signature king bed with high-thread hypoallergenic linens</li>
+				<li class="feature-item">Adaptive mood lighting + blackout drapery system</li>
+				<li class="feature-item">Dual-vanity marble bathroom & rain spa shower</li>
+				<li class="feature-item">Freestanding deep soaking tub with garden viewpoint</li>
+				<li class="feature-item">In-room espresso atelier & artisanal tea collection</li>
+				<li class="feature-item">Integrated climate & air purification controls</li>
+				<li class="feature-item">Discrete housekeeping & turndown scheduling via panel</li>
+				<li class="feature-item">High-speed secure Wi‑Fi and multi‑device charging array</li>
+				<li class="feature-item">Premium sound system with ambient soundscapes</li>
+			</ul>
+		</section>
+
+		<!-- Specifications -->
+		<section class="section" aria-labelledby="specs-heading">
+			<h2 id="specs-heading">SPECIFICATIONS</h2>
+			<table class="spec-table" aria-describedby="specs-heading">
+				<tbody>
+					<tr>
+						<th scope="row">Total Area</th>
+						<td>165 m² combined indoor + outdoor living space</td>
+					</tr>
+					<tr>
+						<th scope="row">Pool Dimensions</th>
+						<td>7.5 m x 3 m heated private pool</td>
+					</tr>
+					<tr>
+						<th scope="row">Occupancy</th>
+						<td>Up to 3 adults or 2 adults + 2 children</td>
+					</tr>
+					<tr>
+						<th scope="row">Bed Configuration</th>
+						<td>1 King (extra rollaway or crib on request)</td>
+					</tr>
+					<tr>
+						<th scope="row">View</th>
+						<td>Private garden enclave + partial horizon light</td>
+					</tr>
+					<tr>
+						<th scope="row">Orientation</th>
+						<td>Optimized for morning light; gentle afternoon shade</td>
+					</tr>
+					<tr>
+						<th scope="row">Bathroom</th>
+						<td>Marble double vanity + separate shower & tub zones</td>
+					</tr>
+					<tr>
+						<th scope="row">Flooring</th>
+						<td>Climate-balanced oak + textured stone transitions</td>
+					</tr>
+					<tr>
+						<th scope="row">Tech Suite</th>
+						<td>Smart panel environment control + encrypted streaming</td>
+					</tr>
+					<tr>
+						<th scope="row">Sustainability</th>
+						<td>Low-emission materials & water-efficient systems</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Inline Booking CTA -->
+		<section class="inline-box" aria-labelledby="booking-inline-heading">
+			<h2 id="booking-inline-heading">BOOK THIS VILLA</h2>
+			<p>Secure exclusive access to your private Garden Pool Villa. Select your preferred dates to begin a tailored reservation.</p>
+			<button class="primary-cta" data-open-booking aria-haspopup="dialog">BEGIN BOOKING</button>
+		</section>
+	</main>
+
+	<!-- Booking Modal -->
+	<div class="booking-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="booking-title" id="bookingModal">
+		<div class="modal-panel">
+			<button class="close-btn" type="button" aria-label="Close booking" data-close>×</button>
+			<h2 id="booking-title">Garden Pool Villa Booking</h2>
+			<form id="bookingForm" novalidate>
+				<div class="form-row">
+					<label for="roomName">Room</label>
+					<input id="roomName" name="roomName" value="Garden Pool Villa" class="readonly-room" readonly />
+				</div>
+				<div class="form-row">
+					<label for="guestName">Guest Name</label>
+					<input id="guestName" name="guestName" required placeholder="Your full name" />
+				</div>
+				<div class="form-row">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" required placeholder="name@example.com" />
+				</div>
+				<div class="form-row">
+					<label for="checkin">Check-In Date</label>
+					<input id="checkin" name="checkin" type="date" required />
+				</div>
+				<div class="form-row">
+					<label for="checkout">Check-Out Date</label>
+					<input id="checkout" name="checkout" type="date" required />
+				</div>
+				<div class="actions">
+					<button class="primary-cta" type="submit">SUBMIT REQUEST</button>
+					<button class="secondary-cta" type="button" data-close>Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<footer class="site-footer" role="contentinfo">
+		<div class="footer-inner">
+			<div class="footer-logo" aria-label="Brand">
+				<img src="../Logo.png" alt="Six Seven Hotel" />
+			</div>
+			<div class="footer-columns" role="navigation" aria-label="Footer links">
+				<div class="col">
+					<h4>About</h4>
+					<ul>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="#">FOR GOOD</a></li>
+						<li><a href="#">HEALTH &amp; SAFETY</a></li>
+						<li><a href="#">CAREERS</a></li>
+						<li><a href="#">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>Reservations</h4>
+					<ul>
+						<li><a href="#">REQUEST AN INVOICE</a></li>
+						<li><a href="#">FIND A RESERVATION</a></li>
+						<li><a href="#">EMAIL PREFERENCES</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>News</h4>
+					<ul>
+						<li><a href="#">PRESS ROOM</a></li>
+						<li><a href="#">NEW OPENINGS</a></li>
+						<li><a href="#">MAGAZINE</a></li>
+						<li><a href="#">NEWSLETTER</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h4>More</h4>
+					<ul>
+						<li><a href="#">PRIVATE JET</a></li>
+						<li><a href="#">YACHTS</a></li>
+						<li><a href="#">RESIDENCES</a></li>
+						<li><a href="#">VILLA RENTALS</a></li>
+						<li><a href="#">GIFT CARDS</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-social" aria-label="Social media">
+				<a class="social" href="#" aria-label="Facebook"><img src="../homepage_resources/facebook-svgrepo-com.svg" alt="Facebook" /></a>
+				<a class="social" href="#" aria-label="Instagram"><img src="../homepage_resources/instagram-svgrepo-com.svg" alt="Instagram" /></a>
+				<a class="social" href="#" aria-label="YouTube"><img src="../homepage_resources/youtube-svgrepo-com.svg" alt="YouTube" /></a>
+			</div>
+			<hr class="footer-divider" />
+			<div class="footer-bottom">
+				<div class="legal-links">Legal Notice · Privacy Notice · Cookie Preferences · Accessibility · Modern Slavery Statement</div>
+				<div class="bottom-right">
+					<div class="language" role="listbox" aria-label="Language selector">ENGLISH ▾</div>
+					<div class="copyright">©Six Seven Hotels Limited 1997-2025. All Rights Reserved.</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+	(function(){
+		const modal = document.getElementById('bookingModal');
+		const form = document.getElementById('bookingForm');
+		const openers = document.querySelectorAll('[data-open-booking]');
+		const closeEls = modal.querySelectorAll('[data-close]');
+		let lastFocused = null;
+
+		function openModal(){
+			lastFocused = document.activeElement;
+			modal.classList.add('active');
+			modal.setAttribute('aria-hidden','false');
+			document.body.classList.add('no-scroll');
+			const firstInput = form.querySelector('input:not([readonly])');
+			firstInput && firstInput.focus();
+			trapFocus();
+		}
+		function closeModal(){
+			modal.classList.remove('active');
+			modal.setAttribute('aria-hidden','true');
+			document.body.classList.remove('no-scroll');
+			lastFocused && lastFocused.focus();
+		}
+		openers.forEach(btn=>btn.addEventListener('click', openModal));
+		closeEls.forEach(btn=>btn.addEventListener('click', closeModal));
+		window.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && modal.classList.contains('active')) closeModal(); });
+
+		function trapFocus(){
+			const focusable = modal.querySelectorAll('button, [href], input, select, textarea');
+			const first = focusable[0];
+			const last = focusable[focusable.length-1];
+			modal.addEventListener('keydown', function(e){
+				if(e.key === 'Tab'){
+					if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+					else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+				}
+			});
+		}
+
+		form.addEventListener('submit', function(e){
+			e.preventDefault();
+			const data = new FormData(form);
+			const params = new URLSearchParams();
+			for(const [k,v] of data.entries()){ params.append(k,v); }
+			params.append('roomType','garden_pool_villa');
+			window.location.href = '../hotel_bookingpage.html?' + params.toString();
+		});
+	})();
+	</script>
+</body>
+</html>

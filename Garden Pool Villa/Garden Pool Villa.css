@@ -1,0 +1,109 @@
+body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:#eae8e0; color:#2d2d2d; }
+body.no-scroll { overflow:hidden; }
+button, a { text-decoration: none !important; }
+
+/* Nav */
+.border { padding:15px 22px; display:flex; align-items:center; background:rgba(22,22,22,0.65); color:#fff; position:sticky; top:0; z-index:10; }
+.logo { width:40px; height:auto; margin-right:10px; }
+.pagetitle { font-size:120%; letter-spacing:.5px; }
+.pagesbar { margin-left:auto; display:flex; gap:12px; }
+.page { text-decoration:none; color:#fff; font-size:110%; }
+.page:hover { text-decoration:underline; }
+
+/* Hero */
+.room-hero { position:relative; height:60vh; min-height:420px; display:flex; align-items:flex-end; color:#fff; }
+.hero-media { position:absolute; inset:0; background:url('../homepage_resources/best-luxury-hotel-private-luxury-villas-with-ocean-view-greece-porto-zante-villas-and-spa-01-2.webp') center/cover no-repeat; filter:brightness(.7); }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.55) 60%,rgba(0,0,0,0.75) 100%); }
+.hero-inner { position:relative; padding:60px 34px 70px; max-width:1100px; }
+.hero-title { margin:0 0 10px; font-size:46px; font-weight:300; letter-spacing:3px; }
+.hero-tagline { margin:0 0 24px; font-size:16px; opacity:.9; }
+
+/* Sections */
+.content { max-width:1100px; margin:0 auto; padding:40px 30px 80px; }
+.section { margin-bottom:50px; padding-top:30px; border-top:1px solid #c7c0b5; }
+.section:first-of-type { border-top:none; padding-top:0; }
+.section h2 { font-weight:400; letter-spacing:2px; margin:0 0 18px; font-size:26px; }
+.lead { font-size:18px; line-height:1.55; max-width:880px; }
+
+/* Feature list minimalist */
+.feature-grid { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:0; }
+.feature-item { padding:10px 4px; font-size:14px; line-height:1.4; border-top:1px solid #c7c0b5; }
+.feature-item:first-child { border-top:none; }
+
+/* Specs table minimalist */
+.spec-table { width:100%; border-collapse:collapse; background:transparent; }
+.spec-table th, .spec-table td { padding:14px 18px; font-size:14px; }
+.spec-table th { text-align:left; width:180px; font-weight:600; background:transparent; }
+.spec-table tr { border-top:1px solid #c7c0b5; }
+.spec-table tr:first-child { border-top:none; }
+
+/* Inline booking box */
+.inline-box { padding:24px 0 30px; max-width:780px; border-top:1px solid #c7c0b5; }
+.inline-box h2 { margin:0 0 12px; font-size:24px; font-weight:500; letter-spacing:1px; }
+.inline-box p { margin:0 0 16px; font-size:15px; line-height:1.5; }
+
+/* Buttons minimalist */
+.primary-cta, .secondary-cta { border-radius:0; box-shadow:none; }
+.primary-cta { background:#222; color:#fff; border:1px solid #222; padding:12px 24px; font-size:12px; letter-spacing:1.2px; cursor:pointer; font-weight:600; }
+.primary-cta:hover { background:#000; }
+.secondary-cta { background:#fff; color:#222; border:1px solid #999; padding:12px 22px; font-size:12px; cursor:pointer; }
+.secondary-cta:hover { background:#f5f5f5; }
+
+/* Modal */
+.booking-modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.55); backdrop-filter:blur(4px); z-index:100; padding:40px 24px; }
+.booking-modal.active { display:flex; }
+.modal-panel { width:100%; max-width:520px; background:#fff; padding:34px 36px 40px; position:relative; border:1px solid #c7c0b5; }
+.modal-panel h2 { margin:0 0 22px; font-weight:500; letter-spacing:1px; }
+.close-btn { position:absolute; top:10px; right:10px; width:34px; height:34px; border:1px solid #999; background:#fff; color:#333; cursor:pointer; font-size:18px; }
+.close-btn:hover { background:#f5f5f5; }
+.form-row { display:flex; flex-direction:column; margin-bottom:14px; }
+.form-row label { font-size:13px; font-weight:600; margin-bottom:6px; letter-spacing:.5px; }
+.form-row input { padding:10px 12px; border:1px solid #ccc; font-size:14px; font-family:inherit; }
+.form-row input:focus { outline:2px solid #4f443d22; border-color:#4f443d; }
+.readonly-room { background:#f5f5f5; }
+.actions { display:flex; gap:12px; margin-top:10px; }
+
+/* Footer */
+.site-footer { background:#000; color:#fff; padding:34px 20px 20px; margin-top:40px; }
+.footer-inner { max-width:1100px; margin:0 auto; }
+.footer-logo img { width:120px; height:auto; filter:brightness(1.2); }
+.footer-bottom { margin-top:16px; font-size:12px; opacity:.75; }
+
+/* New footer layout */
+.site-footer { background:#000; color:#fff; padding:70px 32px 40px; font-family:inherit; }
+.site-footer a { color:#fff; text-decoration:none; }
+.site-footer a:hover { text-decoration:underline; }
+.footer-logo { text-align:center; margin-bottom:50px; }
+.footer-logo img { width:120px; height:auto; filter:brightness(1.15); }
+.footer-columns { display:grid; max-width:1000px; margin:0 auto 50px; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:40px; }
+.footer-columns h4 { font-family:Georgia,serif; font-weight:400; font-size:15px; margin:0 0 14px; font-style:italic; letter-spacing:.5px; }
+.footer-columns ul { list-style:none; padding:0; margin:0; }
+.footer-columns li { font-size:11px; letter-spacing:1.5px; font-weight:600; margin:0 0 14px; }
+.footer-social { display:flex; gap:18px; align-items:center; margin:0 auto 34px; max-width:1000px; }
+.footer-social .social img { width:22px; height:22px; display:block; filter:brightness(1); }
+.footer-divider { border:0; border-top:1px solid #222; margin:0 auto 28px; max-width:1000px; }
+.footer-bottom { max-width:1000px; margin:0 auto; display:flex; flex-direction:column; gap:18px; }
+.legal-links { font-size:11px; line-height:1.5; letter-spacing:.5px; }
+.bottom-right { display:flex; flex-direction:column; gap:10px; }
+.language { font-size:11px; letter-spacing:2px; font-weight:600; }
+.copyright { font-size:11px; letter-spacing:.5px; opacity:.75; }
+
+@media (min-width: 860px){
+	.bottom-right { flex-direction:row; justify-content:space-between; align-items:center; }
+	.footer-bottom { flex-direction:row; justify-content:space-between; align-items:flex-start; }
+	.legal-links { flex:1; padding-right:40px; }
+}
+
+/* Footer column links: keep href but no underline even on hover */
+.footer-columns a { text-decoration:none !important; }
+.footer-columns a:hover { text-decoration:none !important; }
+
+@media (max-width: 760px){
+	.hero-title { font-size:34px; }
+	.hero-inner { padding:50px 24px 60px; }
+	.feature-grid { grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce){
+	.primary-cta { transition:none; }
+}
