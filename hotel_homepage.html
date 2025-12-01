@@ -3,93 +3,516 @@
     <head>
         <meta charset="UTF-8">
         <title>Home</title>
-        <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #eae8e0;
-        }
-
-        .border {
-            padding: 15px;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            background-color: #b6ac9f;
-        }
-
-        .page {
-            text-decoration: none;
-            font-size : 120%;
-            color: #4f443d;
-            margin-right: 12px;
-        }
-
-        .pagesbar {
-            display:flex;
-            margin-left:auto;
-            gap:10px;
-            align-items:center;
-        }
-        
-        .logo {
-            margin-right: 8px;
-            width: 40px;
-            height: auto;
-        }
-
-        .pagetitle{
-            font-size:120%;
-        }
-
-        .popup-panel {
-            display: block;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #b6ac9f;
-            color: #4f443d;
-            padding: 80px;
-            z-index: 1000; 
-            text-align: center;
-        }
-        </style>
-
+        <link rel="stylesheet" href="homepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="border" role="navigation" aria-label="Main navigation">
-            <img src="Logo.png" alt="logo" class="logo">
-            <!--Page name-->
-            <div class="pagetitle">
-                Welcome
+        <header class="site-header">
+            <nav class="border" role="navigation" aria-label="Main navigation">
+                <img src="Logo.png" alt="logo" class="logo">
+                <!--Page name-->
+                <a href="./hotel_homepage.html" class="pagetitle">Welcome</a>
+                <!--Pages header-->
+                <div class="pagesbar">
+                    <a href="./hotel_homepage.html" class="page">Home</a>
+                    <a href="#accommodations" class="page">Booking</a>
+                    <a href="./hotel_contactpage.html" class="page">Contacts</a>
+                </div>
+            </nav>
+
+            <div class="hero">
+                <div class="video-wrapper">
+                    <video class="hero-video current" autoplay muted loop playsinline preload="auto">
+                        <source src="homepage_resources/canary%20island-uhd_2560_1440_60fps.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <!-- edge click zones (hover at very edge changes cursor; click to change video) -->
+                <div class="edge-zone left-zone" aria-hidden="true"></div>
+                <div class="edge-zone right-zone" aria-hidden="true"></div>
+
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">Sixty Seven Hotel</div>
+                    <h1 class="hero-title">Canary Island</h1>
+                    <p class="hero-sub">145 Jalan Ampang, 50450 Kuala Lumpur, Malaysia</p>
+                    <div class="hero-tiles">
+                        <a href="#" class="tile">LOCATION</a>
+                        <a href="#accommodations" class="tile">ACCOMMODATIONS</a>
+                        <a href="#facilities" class="tile">FACILITIES &amp; AMENITIES</a>
+                    </div>
+                </div>
             </div>
-            <!--Pages header-->
-            <div class="pagesbar">
-                <a href="./hotel_homepage.html" class="page">Home</a>
-                <a href="./hotel_bookingpage.html" class="page">Booking</a>
-                <a href="./hotel_contactpage.html" class="page">Contacts</a>
+        </header>
+
+        <main>
+            <section class="Introduction" aria-label="Introduction">
+            <div class="intro">
+                <h1>Welcome to Six Seven Hotel</h1>
+                <p style="margin: 20px; font-size: 20px;">Experience luxury and comfort like never before at Six Seven Hotel. Our exquisite rooms and top-notch amenities are designed to provide you with an unforgettable stay. Whether you're here for business or leisure, we have everything you need to make your visit exceptional. Book your stay with us today and indulge in the ultimate hospitality experience!</p>
             </div>
-        </nav>
-        <br>
+            </section>
+            <!-- Accommodations: full-width carousel -->
+            <section class="accommodations" id="accommodations" aria-label="Accommodations">
+                <h2>ACCOMMODATIONS</h2>
+                <p class="accom-meta">Elegant rooms and suites crafted for comfort.</p>
+                <div class="accom-carousel">
+                    <button class="accom-btn prev" aria-label="Previous">‹</button>
+                    <div class="accom-viewport">
+                        <div class="accom-track">
+                            <div class="accom-slide">
+                                <a href="./City View Deluxe/City View Deluxe.html" class="accom-link">
+                                    <figure class="accom-card">
+                                        <img src="./homepage_resources/deluxu room splash.jpg" alt="Deluxe Room" loading="lazy">
+                                        <figcaption>
+                                            <p class="accom-overline">DELUXE ROOM</p>
+                                            <h3>City View Deluxe</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="accom-slide">
+                                <a href="./Executive Corner Suite/Executive Corner Suite.html" class="accom-link">
+                                    <figure class="accom-card">
+                                        <img src="./homepage_resources/The-A-Executive-Suite-view-of-dining-lounge-and-bedroom-areas_q085_1920x1080.jpg" alt="Executive Suite" loading="lazy">
+                                        <figcaption>
+                                            <p class="accom-overline">EXECUTIVE SUITE</p>
+                                            <h3>Executive Corner Suite</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="accom-slide">
+                                <a href="./Two-Bedroom Family/Two-Bedroom Family.html" class="accom-link">
+                                    <figure class="accom-card">
+                                        <img src="./homepage_resources/Executive-Family-1800x1200-1.jpg" alt="Family Room" loading="lazy">
+                                        <figcaption>
+                                            <p class="accom-overline">FAMILY ROOM</p>
+                                            <h3>Two-Bedroom Family</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="accom-slide">
+                                <a href="./Garden Pool Villa/Garden Pool Villa.html" class="accom-link">
+                                    <figure class="accom-card">
+                                        <img src="./homepage_resources/best-luxury-hotel-private-luxury-villas-with-ocean-view-greece-porto-zante-villas-and-spa-01-2.webp" alt="Private Villa" loading="lazy">
+                                        <figcaption>
+                                            <p class="accom-overline">PRIVATE VILLA</p>
+                                            <h3>Garden Pool Villa</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accom-btn next" aria-label="Next">›</button>
+                </div>
+                <div class="accom-dots" role="tablist" aria-label="Accommodations pages"></div>
+            </section>
+        </main>
+        <!-- Gallery carousel (5 image frames) -->
+        <section class="gallery-carousel" id="facilities" aria-label="Highlights gallery">
+            <h2>FACILITIES & AMENITIES</h2>
+            <p class="carousel-meta">Tailored stays, signature rituals, and spaces designed for modern serenity.</p>
+            <div class="carousel-wrap">
+                <div class="carousel-window">
+                    <button class="carousel-btn prev" aria-label="Previous">‹</button>
+                    <div class="carousel-viewport">
+                        <div class="carousel-track">
+                        <div class="slide">
+                            <figure class="slide-card">
+                                <img src="./homepage_resources/Sunrise Infinity Pool-unsplash.jpg" alt="Seaside infinity pool" loading="lazy">
+                                <figcaption>
+                                    <p class="slide-overline">POOL DECK</p>
+                                    <h3>Sunrise Infinity Pool</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide">
+                            <figure class="slide-card">
+                                <img src="./homepage_resources/gym-unsplash.jpg" alt="Luxury suite interior" loading="lazy">
+                                <figcaption>
+                                    <p class="slide-overline">GYM</p>
+                                    <h3>Daily Vitality Ritual</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide">
+                            <figure class="slide-card">
+                                <img src="./homepage_resources/Dining-unsplash.jpg" alt="Dining terrace" loading="lazy">
+                                <figcaption>
+                                    <p class="slide-overline">DINING</p>
+                                    <h3>Terrace Tasting Menu</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide">
+                            <figure class="slide-card">
+                                <img src="./homepage_resources/spa-unsplash.jpg" alt="Spa room" loading="lazy">
+                                <figcaption>
+                                    <p class="slide-overline">WELLNESS</p>
+                                    <h3>Botanical Wellness Ritual</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="slide">
+                            <figure class="slide-card">
+                                <img src="./homepage_resources/urban retreat.jpg" alt="Private villa" loading="lazy">
+                                <figcaption>
+                                    <p class="slide-overline">SPA</p>
+                                    <h3>An Urban Retreat</h3>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Next">›</button>
+                </div>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Gallery pages"></div>
+        </section>
         
-        <div id="branchPopup" class="popup-panel" role="dialog" aria-hidden="true" aria-labelledby="branch">
-            <form id="branchID">
-                <label>Which brance are you looking to visit?</label>
-                <select>
-                    <option value="KL">Kuala Lumpur</option>
-                    <option value="Penang">Penang</option>
-                    <option value="Melacca">Melacca</option>
-                    <option value="Langkawi">Langkawi</option>
-                </select>
+        <!-- Footer: match provided design -->
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="Four Seasons" />
+                </div>
 
-                <br><br><button type="submit">Ok</button>
-            </form>
-            
+                <div class="footer-columns">
+                    <div class="col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">FOUR SEASONS FOR GOOD</a></li>
+                            <li><a href="#">HEALTH AND SAFETY</a></li>
+                            <li><a href="#">CAREERS</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>Reservations</h4>
+                        <ul>
+                            <li><a href="#">REQUEST AN INVOICE</a></li>
+                            <li><a href="booking.html">FIND A RESERVATION</a></li>
+                            <li><a href="#">EMAIL PREFERENCES</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>News</h4>
+                        <ul>
+                            <li><a href="#">NEWSLETTER SIGN UP</a></li>
+                            <li><a href="#">PRESS ROOM</a></li>
+                            <li><a href="#">NEW OPENINGS</a></li>
+                            <li><a href="#">MAGAZINE</a></li>
+                            <li><a href="#">NEWSLETTER</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h4>More</h4>
+                        <ul>
+                            <li><a href="#">PRIVATE JET</a></li>
+                            <li><a href="#">YACHTS</a></li>
+                            <li><a href="#">RESIDENCES</a></li>
+                            <li><a href="#">VILLA &amp; RESIDENCE RENTALS</a></li>
+                            <li><a href="#">GIFT CARDS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a class="social" href="#" aria-label="facebook">
+                        <img src="homepage_resources/facebook-svgrepo-com.svg" alt="Facebook" />
+                    </a>
+                    <a class="social" href="#" aria-label="instagram">
+                        <img src="homepage_resources/instagram-svgrepo-com.svg" alt="Instagram" />
+                    </a>
+                    <a class="social" href="#" aria-label="youtube">
+                        <img src="homepage_resources/youtube-svgrepo-com.svg" alt="YouTube" />
+                    </a>
+                </div>
+
+                <hr class="footer-divider" />
+
+                <div class="footer-bottom">
+                    <div class="legal-links">Legal Notice · Privacy Notice · Cookie Preferences · Do Not Sell My Personal Information · Accessibility Policy · Modern Slavery Statement</div>
+                    <div class="bottom-right">
+                        <div class="copyright">©Six Seven Hotels Limited 1997-2025. All Rights Reserved.</div>
+                        <div class="language">ENGLISH ▾</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
         <script>
+            (function(){
+                const wrapper = document.querySelector('.video-wrapper');
+                let currentVideo = wrapper.querySelector('video.hero-video');
+                const tagEl = document.querySelector('.hero-tag');
+                const titleEl = document.querySelector('.hero-title');
+                const subEl = document.querySelector('.hero-sub');
 
+                const items = [
+                    {
+                        src: 'homepage_resources/canary%20island-uhd_2560_1440_60fps.mp4',
+                        tag: 'Sixty Seven Hotel',
+                        title: 'Canary Island',
+                        sub: '145 Jalan Ampang, 50450 Kuala Lumpur, Malaysia'
+                    },
+                    {
+                        src: 'homepage_resources/miami%20beachside.mp4',
+                        tag: 'Sixty Seven Hotel',
+                        title: 'Miami Beachside',
+                        sub: '145 Jalan Ampang, 50450 Kuala Lumpur, Malaysia'
+                    },
+                    {
+                        src: 'homepage_resources/maldives.mp4',
+                        tag: 'Sixty Seven Hotel',
+                        title: 'Maldives',
+                        sub: '145 Jalan Ampang, 50450 Kuala Lumpur, Malaysia'
+                    }
+                ];
+
+                // determine starting index from current video's source
+                const srcEl = currentVideo && currentVideo.querySelector('source');
+                let idx = items.findIndex(i => srcEl && i.src === srcEl.getAttribute('src'));
+                if (idx === -1) idx = 0;
+
+                function updateHeroText(i){
+                    const item = items[(i + items.length) % items.length];
+                    if (!item) return;
+                    tagEl.textContent = item.tag;
+                    titleEl.textContent = item.title;
+                    subEl.textContent = item.sub;
+                }
+
+                function createVideo(src){
+                    const v = document.createElement('video');
+                    v.className = 'hero-video';
+                    v.setAttribute('autoplay','');
+                    v.muted = true;
+                    v.loop = true;
+                    v.playsInline = true;
+                    v.preload = 'auto';
+                    const s = document.createElement('source');
+                    s.src = src;
+                    s.type = 'video/mp4';
+                    v.appendChild(s);
+                    return v;
+                }
+
+                function showIndex(i, direction = 'right'){
+                    idx = (i + items.length) % items.length;
+                    const item = items[idx];
+                    const newV = createVideo(item.src);
+
+                    // set initial position depending on direction
+                    if(direction === 'right'){
+                        newV.classList.add('enter-right');
+                        currentVideo.classList.add('leave-to-left');
+                    } else {
+                        newV.classList.add('enter-left');
+                        currentVideo.classList.add('leave-to-right');
+                    }
+
+                    wrapper.appendChild(newV);
+                    // force reflow so transitions run
+                    newV.getBoundingClientRect();
+
+                    // trigger animations
+                    newV.classList.add('active');
+                    currentVideo.classList.add('active-leave');
+
+                    // update hero copy for the incoming video
+                    updateHeroText(idx);
+
+                    // when the incoming video finishes its transition, remove the old one
+                    function onEnd(){
+                        if(currentVideo && currentVideo.parentNode) currentVideo.parentNode.removeChild(currentVideo);
+                        newV.classList.remove('enter-right','enter-left','active');
+                        newV.classList.add('current');
+                        currentVideo = newV;
+                        newV.removeEventListener('transitionend', onEnd);
+                    }
+                    newV.addEventListener('transitionend', onEnd);
+
+                    // try to start playback
+                    newV.play().catch(()=>{});
+                }
+
+                // edge zones: change cursor via CSS; listen for clicks to change video
+                const leftZone = document.querySelector('.edge-zone.left-zone');
+                const rightZone = document.querySelector('.edge-zone.right-zone');
+                if (leftZone) leftZone.addEventListener('click', ()=> showIndex(idx-1, 'left'));
+                if (rightZone) rightZone.addEventListener('click', ()=> showIndex(idx+1, 'right'));
+
+                // hide behaviour for mouseleave no longer needed (no arrows)
+
+                // initialize hero text from current video
+                updateHeroText(idx);
+            })();
+        </script>
+        <script>
+            (function(){
+                const track = document.querySelector('.carousel-track');
+                const viewportEl = document.querySelector('.carousel-viewport');
+                const slides = Array.from(track.querySelectorAll('.slide'));
+                const prevBtn = document.querySelector('.carousel-btn.prev');
+                const nextBtn = document.querySelector('.carousel-btn.next');
+                const dotsContainer = document.querySelector('.carousel-dots');
+                let index = 0;
+                const slideCount = slides.length;
+
+                function update(){
+                    const viewportWidth = viewportEl.offsetWidth;
+                    const trackWidth = track.scrollWidth;
+                    const slide = slides[index];
+                    const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+                    const viewportCenter = viewportWidth / 2;
+                    let translate = viewportCenter - slideCenter;
+                    const minTranslate = viewportWidth - trackWidth;
+                    const maxTranslate = 0;
+                    translate = Math.max(minTranslate, Math.min(maxTranslate, translate));
+                    track.style.transform = `translateX(${translate}px)`;
+                    Array.from(dotsContainer.children).forEach((btn,i)=> btn.classList.toggle('active', i === index));
+                }
+
+                function goNext(){ index = (index + 1) % slideCount; update(); }
+                function goPrev(){ index = (index - 1 + slideCount) % slideCount; update(); }
+
+                prevBtn.addEventListener('click', ()=>{ stopAuto(); goPrev(); startAuto(); });
+                nextBtn.addEventListener('click', ()=>{ stopAuto(); goNext(); startAuto(); });
+
+                // dots
+                for(let i=0;i<slideCount;i++){
+                    const b = document.createElement('button');
+                    b.addEventListener('click', ()=>{ index = i; update(); stopAuto(); startAuto(); });
+                    if(i===0) b.classList.add('active');
+                    dotsContainer.appendChild(b);
+                }
+
+                let autoplay;
+                function startAuto(){
+                    stopAuto();
+                    autoplay = setInterval(goNext, 4000);
+                }
+                function stopAuto(){
+                    if(autoplay) clearInterval(autoplay);
+                    autoplay = null;
+                }
+                startAuto();
+
+                document.querySelector('.gallery-carousel').addEventListener('mouseenter', stopAuto);
+                document.querySelector('.gallery-carousel').addEventListener('mouseleave', startAuto);
+
+                // resize handling to re-position
+                window.addEventListener('resize', ()=> setTimeout(update,120));
+
+                // initial position (wait for layout)
+                window.requestAnimationFrame(()=> setTimeout(update,50));
+
+            })();
+        </script>
+        <script>
+            // Accommodations full-bleed carousel with infinite loop
+            (function(){
+                const track = document.querySelector('.accom-track');
+                const viewportEl = document.querySelector('.accom-viewport');
+                if(!track || !viewportEl) return;
+                const originalSlides = Array.from(track.querySelectorAll('.accom-slide'));
+                const prevBtn = document.querySelector('.accom-btn.prev');
+                const nextBtn = document.querySelector('.accom-btn.next');
+                const dotsContainer = document.querySelector('.accom-dots');
+                const slideCount = originalSlides.length;
+                
+                // Clone slides before and after for seamless looping
+                const clonesBefore = originalSlides.map(s => s.cloneNode(true));
+                const clonesAfter = originalSlides.map(s => s.cloneNode(true));
+                
+                clonesBefore.forEach(c => track.insertBefore(c, track.firstChild));
+                clonesAfter.forEach(c => track.appendChild(c));
+                
+                const allSlides = Array.from(track.querySelectorAll('.accom-slide'));
+                let index = slideCount; // start at first original slide
+                let transitioning = false;
+
+                function update(noTransition = false){
+                    if(noTransition){
+                        track.style.transition = 'none';
+                    } else {
+                        track.style.transition = 'transform 500ms ease';
+                    }
+                    
+                    const viewportWidth = viewportEl.offsetWidth;
+                    const slide = allSlides[index];
+                    const slideCenter = slide.offsetLeft + slide.offsetWidth / 2;
+                    const viewportCenter = viewportWidth / 2;
+                    const translate = viewportCenter - slideCenter;
+                    track.style.transform = `translateX(${translate}px)`;
+                    
+                    // Update dots based on logical position
+                    const logicalIndex = ((index - slideCount) % slideCount + slideCount) % slideCount;
+                    Array.from(dotsContainer.children).forEach((btn,i)=> btn.classList.toggle('active', i === logicalIndex));
+                    
+                    if(noTransition){
+                        track.getBoundingClientRect(); // force reflow
+                    }
+                }
+
+                function goNext(){
+                    if(transitioning) return;
+                    transitioning = true;
+                    index++;
+                    update();
+                    
+                    // After transition, check if we need to jump
+                    setTimeout(()=>{
+                        if(index >= slideCount * 2){
+                            index = slideCount;
+                            update(true);
+                        }
+                        transitioning = false;
+                    }, 500);
+                }
+                
+                function goPrev(){
+                    if(transitioning) return;
+                    transitioning = true;
+                    index--;
+                    update();
+                    
+                    setTimeout(()=>{
+                        if(index < slideCount){
+                            index = slideCount * 2 - 1;
+                            update(true);
+                        }
+                        transitioning = false;
+                    }, 500);
+                }
+
+                prevBtn.addEventListener('click', goPrev);
+                nextBtn.addEventListener('click', goNext);
+
+                // dots
+                for(let i=0;i<slideCount;i++){
+                    const b = document.createElement('button');
+                    b.addEventListener('click', ()=>{ 
+                        if(transitioning) return;
+                        index = slideCount + i;
+                        update();
+                    });
+                    if(i===0) b.classList.add('active');
+                    dotsContainer.appendChild(b);
+                }
+
+                window.addEventListener('resize', ()=> setTimeout(()=>update(true), 120));
+                window.requestAnimationFrame(()=> setTimeout(()=>update(true), 50));
+
+            })();
         </script>
     </body>
 </html>
