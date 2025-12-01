@@ -1,67 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
-        <title>Booking</title>
-        <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: #eae8e0;
-        }
-
-        .border {
-            padding: 15px;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            background-color: #b6ac9f;
-        }
-
-        .page {
-            text-decoration: none;
-            font-size : 120%;
-            color: #4f443d;
-            margin-right: 12px;
-        }
-
-        .pagesbar {
-            display:flex;
-            margin-left:auto;
-            gap:10px;
-            align-items:center;
-        }
-        
-        .logo {
-            margin-right: 8px;
-            width: 40px;
-            height: auto;
-        }
-
-        .pagetitle{
-            font-size:120%;
-        }
-    </style>
-</head>
+        <title>Home</title>
+        <link rel="stylesheet" href="homepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
     <body>
-        <nav class="border" role="navigation" aria-label="Main navigation">
-            <img src="Logo.png" alt="logo" class="logo">
-            <!--Page name-->
-            <div class="pagetitle">
-                Contact
-            </div>
-            <!--Pages header-->
-            <div class="pagesbar">
-                <a href="./hotel_homepage.html" class="page">Home</a>
-                <a href="./hotel_bookingpage.html" class="page">Booking</a>
-                <a href="./hotel_contactpage.html" class="page">Contacts</a>
-            </div>
-        </nav>
+        <header class="site-header">
+            <nav class="border" role="navigation" aria-label="Main navigation">
+                <img src="Logo.png" alt="logo" class="logo">
+                <!--Page name-->
+                <a href="./hotel_homepage.html" class="pagetitle">Welcome</a>
+                <!--Pages header-->
+                <div class="pagesbar">
+                    <a href="./hotel_homepage.html" class="page">Home</a>
+                    <a href="./hotel_homepage#accommodations" class="page">Booking</a>
+                    <a href="./hotel_contactpage.html" class="page">Contacts</a>
+                </div>
+            </nav>
 
 
     </body>
 </html>
-
